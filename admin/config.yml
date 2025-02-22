@@ -1,9 +1,11 @@
 backend:
-  name: github
+  name: git-gateway
   repo: manikantan07/netlify-1
   branch: main
-media_folder: "../assets/images"
-public_folder: "../assets/images"
+
+media_folder: "assets/images"  # Correct relative path
+public_folder: "/assets/images"
+
 collections:
   - name: "posts"
     label: "Posts"
