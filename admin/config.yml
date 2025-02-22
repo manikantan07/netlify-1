@@ -1,17 +1,15 @@
 backend:
-  name: git-gateway
-  branch: main  # Change to your branch name
-
-media_folder: "assets/images/uploads" # Where uploaded images will be stored
-public_folder: "/images/uploads"      # Path to access uploaded images
-
+  name: github
+  repo: manikantan07/netlify-1
+  branch: main
+media_folder: "../assets/images"
+public_folder: "../assets/images"
 collections:
   - name: "posts"
-    label: "Blog Posts"
+    label: "Posts"
     folder: "content/posts"
     create: true
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
